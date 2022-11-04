@@ -4,6 +4,8 @@ FROM ubuntu
 # Install Nginx
 RUN apt-get -y update && apt-get -y install nginx
 
+COPY index.html /usr/share/nginx/html
+
 
 # Expose the port for access
 EXPOSE 80/tcp
